@@ -10,16 +10,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = OssProperties.OSS_PREFIX)
 public class OssProperties {
 
-    public static final String OSS_PREFIX = "oss";
+    public static final String OSS_PREFIX = "aliyun.oss";
 
     private String accessKeyId;
 
     private String accessKeySecret;
 
     private String endpoint;
-
-//    private String bucketName;
-
 
     public String getAccessKeyId() {
         return accessKeyId;
